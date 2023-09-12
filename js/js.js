@@ -17,12 +17,13 @@ window.scrollTo({
 });
 });
 
-const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar-smoth");
 
 // Mostrar el botón cuando el usuario haya bajado 20% de la altura de la página
 window.addEventListener("scroll", () => {
 if (window.scrollY > window.innerHeight * 0.9) {
   navbar.style.opacity = "0";
+  
 } else {
   navbar.style.opacity = "1";
 }
@@ -35,4 +36,16 @@ window.scrollTo({
   behavior: "smooth" // Suavizar el scroll para que sea más agradable
 });
 });
+
+function productos_conserjes() {
+  $('#conserjes').modal('show');
+}
+
+function productos_oficina() {
+  $('#oficina').modal('show');
+}
+
+function productos_aseo() {
+  $('#personal_aseo').modal('show');
+}
 
